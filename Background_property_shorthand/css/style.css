@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* background-color: skyblue;
+    background-image: url(../img/photo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 300px 100px; */
+
+    background: skyblue url(../img/photo.jpg) no-repeat fixed 300px 100px;
+    
+    height: 100vh;
+}
+
+
+   
+ 
+   
+    
+
+
