@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-1 {
+    width: 120px;
+    height: 120px;
+    background-color: aqua;
+    border: 2px solid black;
+
+    /* top and left property works because our body is parent 
+    and our box-1 is child and we have relativ and not static */
+    
+    /* position: absolute;
+    if we write absolute also will work only 
+    relative is for parent
+    absolute is for child */
+
+    position: relative;
+    top: 100px;
+    left: 100px;
+
+}
