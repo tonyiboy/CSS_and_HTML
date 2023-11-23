@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10%;
+}
+
+div {
+    height: 50vh;
+    width: 150vh;
+    margin: 0 auto;
+    border: 2px solid black;
+
+    background-image: radial-gradient(red, blue);
+}
+   
+ 
+   
+    
+
+
