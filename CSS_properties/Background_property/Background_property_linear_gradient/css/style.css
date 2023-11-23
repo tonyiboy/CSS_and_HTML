@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10%;
+}
+
+div {
+    height: 50vh;
+    width: 150vh;
+    margin: 0 auto;
+    border: 2px solid black;
+
+
+    /* background-image: linear-gradient(to left, red, blue); it starts from right to left */
+    /* background-image: linear-gradient(to right, red, blue); it starts from left to right */
+    /* background-image: linear-gradient(to top, red, blue); it starts from bottom to top */
+    /* background-image: linear-gradient(to bottom, red, blue); it starts from top to bottom */
+    /* background-image: linear-gradient(to left top, red, blue); this is combination */
+    /* background-image: linear-gradient(to top left, red, blue); this is combination is the same like on top */
+     background-image: linear-gradient(45deg, red, blue); /*this is with degrees */
+}
+   
+ 
+   
+    
+
+
