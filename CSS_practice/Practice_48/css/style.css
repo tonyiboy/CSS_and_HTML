@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div {
+  width: 150px;
+  max-height: 100px;
+  background-color: lightcoral;
+  border-radius: 8px;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 4px;
+
+  transition-property: width;
+  transition-duration: 1s;
+}
+
+div:hover {
+    width: 400px;
+}
+
+.one {
+    transition-timing-function: linear;
+  }
+  
+.two {
+    transition-timing-function: ease;
+  }
+  
+.three {
+    transition-timing-function: ease-in;
+  }
+
+.four {
+    transition-timing-function: ease-out;
+}
+
+.five {
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+
