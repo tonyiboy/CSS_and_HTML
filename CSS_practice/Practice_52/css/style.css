@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    background-color: lightblue;
+    height: 40%;
+}
+
+main {
+    background-color: #8FBC8F;
+    height: 30%;
+}
+
+footer {
+    border-top:8px solid grey;
+    background-color: dimgray;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.road {
+    border-top: 4px dashed white;
+    width: 100%;
+}
+
+
+
+
+
+
+
