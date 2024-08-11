@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+
+}
+
+a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: steelblue;
+    color: aliceblue;
+    border: none;
+    outline: 5px solid steelblue;
+    text-decoration: none;
+    transition: 300ms ease-in-out;
+}
+
+a:hover {
+    outline-offset: 5px;
+}
+
