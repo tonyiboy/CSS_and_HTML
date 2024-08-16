@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 75vw;
+    height: 75vh;
+    background-color: lightblue;
+}
+
+div {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
