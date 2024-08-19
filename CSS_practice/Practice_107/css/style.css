@@ -1,0 +1,49 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+section {
+    background-color: brown;
+    padding: 2rem;
+    counter-reset: counting;
+}
+
+section:hover p::before {
+    transform: scale(0);
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    margin-top: 1rem;
+    text-align: center;  
+    position: relative;
+}
+
+p::before {
+    counter-increment: counting;
+    content: counter(counting) " ";
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    background-color: blueviolet;
+    left: 40px;
+    padding: 0.2em;
+    transition: transform 350ms;
+}
+
+
+
