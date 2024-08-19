@@ -1,0 +1,35 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+section {
+    background-color: brown;
+    padding: 2rem;
+    counter-reset: counting;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    margin-top: 1rem;
+    text-align: center;  
+}
+
+p::before {
+    counter-increment: counting;
+    content: counter(counting) " ";
+}
+
