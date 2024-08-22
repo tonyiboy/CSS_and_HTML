@@ -1,0 +1,95 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1F3A5F;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+    width: 350px;
+    height: 234px;
+    position: relative;
+}
+
+section:hover {
+    outline: 5px solid rgba(200, 100, 200, .2);
+    outline-offset: -10px;
+}
+
+section:hover p {
+    transform: rotate(350deg);
+}
+
+img {
+    max-width: 100%;
+    height: auto;  
+}
+
+p {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background-color: antiquewhite;
+    background-image: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.75));
+    padding: 2rem;
+    transition:  250ms ease-in-out;
+}
+
+p:hover {
+    outline: 5px solid grey;
+    outline-offset: 5px;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 1rem;
+    bottom: 1rem;
+    border-block: 1px solid black;
+    transform: scale(0,1);
+    transition: 450ms;
+
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 1rem;
+    bottom: 1rem;
+    border-inline: 1px solid black;
+    transform: scale(1,0);
+    transition: 450ms;
+
+}
+
+section:hover::before {
+    transform: scale(1,1);
+}
+
+section:hover::after {
+    transform: scale(1,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
