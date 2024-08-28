@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 200px;
+    height: 80px;
+    border: 2px solid black;
+    font-size: 40px;
+    display: grid;
+    place-content: center;
+    margin: 80px 0 0 100px;
+
+    border-radius: 8px;
+    box-shadow: 0 20px rgba(46, 204, 113, 0.4);
+}
+
+.box-2 {
+    box-shadow: 0 -20px rgba(46, 204, 113, 0.4);
+}
