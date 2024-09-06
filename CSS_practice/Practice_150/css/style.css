@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292929;
+}
+
+section {
+    width: 250px;
+    height: 350px;
+    background-color: #00829b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section:hover {
+    transform: rotate(360deg);
+    transition: transform 2s;
+}
+
+p {
+    text-transform: uppercase;
+    color: #ffb1ff;
+}
+
+
+
+
+
+
+
