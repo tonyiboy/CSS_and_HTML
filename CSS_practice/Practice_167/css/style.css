@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+header, footer {
+    height: 100px;
+    border: 2px solid black; 
+}
+
+main {
+    display: flex;
+}
+
+section {
+    height: 490px;
+    flex: 1;
+    border: 2px solid black;
+}
+
+.bigSection {
+    flex-grow: 2;
+}
+
