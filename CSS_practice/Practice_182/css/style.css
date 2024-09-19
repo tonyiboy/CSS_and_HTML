@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+[class ^="box-"] {
+    display: grid;
+    place-items: center;
+    border: 3px solid blueviolet;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    grid-template-rows: auto 1fr auto;
+}
+
+.box-1, .box-3 {
+    background-color: aqua;
+}
+
+.box-2 {
+    background-color: darkcyan;
+}
