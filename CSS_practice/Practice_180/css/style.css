@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+[class ^="box-"] {
+    background-color: skyblue;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    height: 100vh;
+    grid-template-areas: 
+    "A A A A    A A A A    A A A A"
+    "B B B B    B B B B    B B C C"
+    "B B B B    B B B B    B B C C";
+}
+
+.box-1{
+    grid-area: A;
+}
+    
+.box-2{
+    grid-area: B;
+}
+
+.box-3{
+    grid-area: C;
+}
