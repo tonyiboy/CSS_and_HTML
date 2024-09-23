@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    flex: 1;
+    background: blue;
+    color: white;
+    /* padding: 5px; */
+    height: 100px;
+    margin: 10px;
+    font-size: 3em;
+    text-align: center;
+    line-height: 100px;
+}
