@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    font-size: 16px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px;
+    grid-template-areas: 
+    "head-1 head-1 head-1 head-1"
+    "head-2 head-2 head-2 head-2";
+}
+
+header {
+    border: 2px solid salmon;
+    padding: 20px;
+    color: white;
+    background-color: blueviolet;
+}
+
+.head-1 {
+    grid-area: head-1;
+}
+
+.head-2 {
+    grid-area: head-2;
+}
+
+
