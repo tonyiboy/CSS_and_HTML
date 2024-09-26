@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+[class ^="box-"] {
+    display: grid;
+    place-items: center;
+    border: 3px solid blueviolet;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.box-1 {
+    grid-column: 1 / 5;
+}
+
+.box-2 {
+    grid-column: 5 / 13;
+}
