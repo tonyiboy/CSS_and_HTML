@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+[class ^="box-"] {
+    display: grid;
+    place-items: center;
+    border: 3px solid blueviolet;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    grid-template-areas: 
+    "A A A A    A A A A    A A A A"
+    "B B B B    B B B B    E E E E"
+    "B B B B    B B B B    E E E E"
+    "C C C C    D D D D    E E E E"
+    ;
+    
+}
+
+.box-1 {
+    grid-area: A;
+}
+
+.box-2 {
+    grid-area: B;
+}
+
+.box-3 {
+    grid-area: C;
+}
+
+.box-4 {
+    grid-area: D;
+}
+
+.box-5 {
+    grid-area: E;
+}
