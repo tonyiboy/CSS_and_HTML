@@ -1,0 +1,44 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /******************* LAYOUT ********************/
+  
+  header, footer {
+    height: 100px;
+    border: 2px solid black;
+    clear: both;
+  }
+  
+  section {
+    height: 490px;
+    width: 20%;
+    border: 2px solid black;
+    float: left;
+  }
+  
+  .bigSection {
+    width: 40%;
+  }
+  
+  
+  /*************************************/
+  /*********** Media Queries ***********/
+  /*************************************/
+  
+  @media screen and (max-width: 600px) {
+    section{
+      background: green;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    section {
+      background: blue;
+      width: 33.3333%;
+    }
+    .bigSection {
+      display: none;
+    }
+  }
