@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+header,footer {
+    height: 100px;
+    border: 3px solid black;
+    clear: both;
+}
+
+section {
+    height: 300px;
+    width: 33.3333%;
+    border: 3px solid black;
+    float: left;
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        background-color: green;
+        border: 10px solid blue;
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    section {
+        background: red;
+        border: 5px solid yellow;
+        width: 50%;
+    }
+
+    .bigSection {
+        width: 100%;
+    }
+}
