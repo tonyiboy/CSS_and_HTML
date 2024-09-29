@@ -1,0 +1,60 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/******************* LAYOUT ********************/
+header, footer {
+    height: 90px;
+    border: 2px solid black;
+    clear: both;
+}
+
+section {
+    height: 200px;
+    border: 2px solid black;
+}
+
+.sectionLeft {
+    height: 300px;
+    width: 30%;
+    border: 2px solid black;
+    float: left;
+
+}
+
+.sectionRight {
+    height: 300px;
+    width: 70%;
+    border: 2px solid black;
+    float: left;
+}
+
+@media screen and (max-width: 600px) {
+    .mobileSection {
+        background: goldenrod;
+        border: 10px solid orchid;
+        width: 100%;
+    }
+
+    header, footer {
+        background: yellow;
+        border: 2px solid green;
+        width: 30%;
+        margin: 0 0 0 150px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    section {
+        background: blue;
+    }
+
+    .sectionLeft, .sectionRight {
+        width: 100%;
+    }
+
+    header, footer {
+        background: red;
+    }
+}
