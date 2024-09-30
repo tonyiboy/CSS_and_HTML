@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    padding: 0px;
+}  
+
+
+
+li {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: 4em;
+    background: red;
+    color: blue;
+}
+
