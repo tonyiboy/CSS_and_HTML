@@ -1,0 +1,20 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+header, footer {
+    height: 120px;
+    border: 1px solid black;
+}
+
+section {
+    height: 220px;
+    border: 1px solid black;
+    flex: 1;
+}
+
+main, .bottom {
+    display: flex;
+
+}
