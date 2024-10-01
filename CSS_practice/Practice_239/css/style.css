@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    list-style: none;
+    margin-top: 200px;
+}
+
+li {
+    width: 100px;
+    text-align: center;
+    margin: 20px;
+    height: 100px;
+    padding: 10px;
+    font-size: 4em;
+    font-weight: bold;
+    background: deepskyblue;
+    color: white;
+}
