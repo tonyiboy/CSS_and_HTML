@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    background: darkgray;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    background: red;
+}
+
+li {
+    width: 100px;
+    text-align: center;
+    margin: 20px;
+    height: 100px;
+    padding: 10px;
+    font-size: 4em;
+    font-weight: bold;
+    background: deepskyblue;
+    color: white;
+}
+
+.first {
+    align-self: flex-start;
+}
+
+.second {
+    align-self: flex-end;
+}
+
+.third {
+    height: 50%;
+}
+
+.listOne {
+    align-self: flex-end;
+}
+
+.listTwo {
+    align-self: center;
+}
