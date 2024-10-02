@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 45px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 4vh;
+    border: 1vh solid darkcyan;
+}
+
+.block-1, .block-2, .block-3 {
+    display: flex;
+    height: 28.2vh;
+    gap: 20px;
+}
+
+.box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    flex-basis: 100%;
+    border-radius: 10px;
+}
