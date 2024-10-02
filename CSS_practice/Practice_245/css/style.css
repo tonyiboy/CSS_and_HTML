@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-top: 200px;
+    padding: 0px;
+}  
+
+
+
+li {
+    width: 300px;
+    height: 100px;
+    margin: 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: 4em;
+    background: red;
+    color: blue;
+}
+
+.itemTwo {
+    flex-shrink: 8;
+}
+
+.itemFive {
+    flex-shrink: 6;
+}
