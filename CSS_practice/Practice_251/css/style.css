@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: #0F1C2E;
+    flex-wrap: wrap;
+    align-items: start;
+    overflow: hidden;
+}
+
+section {
+    width: 100px;
+    transition: 2s;
+
+}
+
+section:hover {
+    box-shadow: 10px 10px 20px black;
+    transition: 2s;
+    transform: translateY(200px) rotate(45deg);
+}
+
+img {
+    max-inline-size: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
