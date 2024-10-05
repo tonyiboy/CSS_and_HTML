@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    background-color: lightblue;
+    perspective: 2500px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+main {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+main:hover .front {
+    transform: rotateY(100deg);
+    transition: 2s;
+}
+
+main:hover .back {
+    transform: rotateY(0deg);
+    transition: 2s 1.7s;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 2s 2s;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    transform: rotateY(100deg);
+    backface-visibility: hidden;
+    transition: 2s;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
