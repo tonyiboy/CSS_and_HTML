@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 35px;
+}
+
+
+
+.container {
+ display: flex;
+ gap: 20px;
+ padding: 20px;
+}
+
+[class ^="block-"] {
+    border: 1vh solid grey;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-1 {
+    flex-grow: 2;
+}
+
+.block-2 {
+   flex-grow: 8;
+}
+
+
