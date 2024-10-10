@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-style: sans-serif;
+    font-size: 35px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+   
+}
+
+[class ^="block-"]{
+    display: flex;
+    height: 31vh;
+    gap: 20px;
+}
+
+
+
+[class ^="box-"]{
+    border: 1vh solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1 {
+    flex-basis: 100%;
+}
+
+.box-2, .box-5 {
+    flex-basis: 70%;
+}
+
+.box-3, .box-4 {
+    flex-basis: 30%;
+}
