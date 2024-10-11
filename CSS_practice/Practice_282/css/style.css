@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    border: 2px solid blueviolet;
+    height: 500px;
+    align-items: center;
+    background: darkgray;
+}
+ul {
+    background: yellowgreen;
+    list-style: none;
+    height: 300px;
+    flex: 1;
+    display: flex;
+}
+
+li {
+    flex: 1;
+    font-size: 2em;
+    text-align: center;
+    margin: 0 10px;
+    color: white;
+    background: darkcyan;
+    
+}
+
+.first {
+    align-items: center;
+}
+
+.second {
+    align-items: flex-start;
+    
+} 
+
+.third {
+    align-items: flex-end;
+}
