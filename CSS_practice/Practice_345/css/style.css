@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0F1C2E;
+    perspective: 1000px; 
+}
+
+main {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    animation-name: rotate-me;
+    animation-duration: 15s;
+    animation-iteration-count: infinite; 
+    transform-style: preserve-3d;
+}
+
+main:hover section{
+    opacity: 0;
+    transition: all 2s;
+}
+
+main:active img{
+    transform: scale(1.5);
+}
+
+p {
+    font-size: 3rem;
+}
+
+img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+/* inside box */
+header {
+    top: 100px;
+    left: 100px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.one {
+    transform: translateZ(100px);
+}
+
+.two {
+    transform: translateZ(-100px);
+}
+
+.three {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.four {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.five {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.six {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+/* out box */
+section {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #71c4ef;
+    opacity: 0.3;
+    box-shadow: 0 0 40px #a64aff inset;
+}
+
+.front {
+    transform: translateZ(200px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(200px);
+} 
+
+.left {
+    transform: rotateY(90deg) translateZ(200px);
+}
+
+.right {
+    transform: rotateY(-90deg) translateZ(200px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(200px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(200px);
+}
+
+
+@keyframes rotate-me {
+    to {
+        transform: rotateY(360deg) rotateX(90deg);
+    }
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
