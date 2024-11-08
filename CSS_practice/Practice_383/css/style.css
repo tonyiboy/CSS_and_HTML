@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b6ccd8;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    perspective: 500px; /* Perspective for the 3D effect */
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg); /* Flip the card */
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.card-front {
+    background-color: green;
+}
+
+.card-back {
+    background-color: #1F3A5F;
+    transform: rotateY(180deg); /* Ensure the back side is hidden initially */
+} 
