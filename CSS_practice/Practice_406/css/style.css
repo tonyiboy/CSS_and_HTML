@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(/img/night.jpg);
+    background-size: cover;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: aliceblue;
+}
+
+a {
+    color: yellow;
+}
+
+a::after {
+    content: attr(href);
+    display: block;
+}
+
+
