@@ -1,0 +1,50 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1F3A5F;
+    text-align: center;
+    padding-top: 2em;
+
+}
+
+h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    color: #e0e0e0;
+}
+
+h1::after {
+    content: "";
+    width: 100vw;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+    background-color: #4d648d;
+    position: absolute;
+    display: block;
+    z-index: -2;
+    top:0
+}
+
+h1::before {
+    position: absolute;
+    content: "";
+    background-color: #374357;
+    height: 100%;
+    z-index: -1;
+    left: -30px;
+    right: -30px;
+
+    
+}
+
+
+
+
+
+
