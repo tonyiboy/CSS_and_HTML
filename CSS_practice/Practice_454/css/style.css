@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b6ccd8;
+    flex-direction: column;
+    gap: 50px;
+}
+
+button {
+    padding: 10px 10px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+
+.btnOne:hover {
+    background-color: #1F3A5F;
+    color: #FF3D3D;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-delay: 0.2s;
+    transition-timing-function: linear;
+}
+
+.btnTwo:hover {
+    transform: rotate(1turn);
+    transition: transform;
+    transition-duration: 3s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
