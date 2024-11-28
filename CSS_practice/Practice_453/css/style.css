@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b6ccd8;
+    flex-direction: column;
+    gap: 50px;
+}
+
+button {
+    padding: 10px 10px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1F3A5F;
+    color: #cee8ff;
+}
+
+.btnOne:hover {
+    transform: rotate(0.2turn);
+}
+
+
+.btnTwo:hover {
+    transform: scale(1.5);
+}
+
+.btnThree:hover {
+    transform: skewY(45deg)
+}
+
+.btnFour:hover {
+    transform: translate(10px,20px)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
