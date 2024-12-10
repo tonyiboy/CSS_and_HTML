@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 15px solid red;
+    background-image: url("../img/photo.jpg");
+    height: 33.3vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 30px;
+    border-style: dashed;
+    margin: 20px 0;
+
+}
+
+
+.containerOne {
+    background-origin: border-box;
+    margin: 0 0 20px 0;
+}
+
+
+.containerTwo {
+    background-origin: padding-box;
+}
+
+.containerThree {
+    background-origin: content-box;
+}
