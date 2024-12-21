@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p::before {
+    content: open-quote;
+    font-size: 20px;
+    color: red;
+}
+
+p::after {
+    content: close-quote;
+    font-size: 20px;
+    color: blue;
+}
+
+a {
+    position: relative;
+}
+
+a::after {
+    content:attr(href);
+    position: absolute;
+    bottom: 100%;
+    background-color: rebeccapurple;
+    color: wheat;
+}
