@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b6ccd8;
+}
+
+button {
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transform: rotateY(360deg);
+    rotate: X 360deg;
+    transition: all 3s;
+}
+
+
+
+
+
+
+
