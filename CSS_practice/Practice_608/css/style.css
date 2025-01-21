@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292929;
+}
+
+body:hover section{
+    transform: translateX(-250px);
+    transition: transform 2s;
+}
+
+section {
+    width: 250px;
+    height: 350px;
+    background-color: #00829b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+}
+
+section:hover p{
+    transform: rotate(360deg);
+    transition: transform 2s;
+}
+
+p {
+    text-transform: uppercase;
+    color: #ffb1ff;
+}
+
+
+
+
+
+
+
