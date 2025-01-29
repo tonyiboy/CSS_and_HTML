@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0F1C2E;
+    perspective: 1000px;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    animation-name: rotate-box;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-style: preserve-3d; 
+}
+
+div:hover section {
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+div:hover header {
+    opacity: 1;
+    transition: all 2s ease;   
+}
+
+.scene:active {
+    animation-play-state: paused;
+}
+
+section {
+    background-color: #e0e0e0;
+    opacity: 0.2;
+    width: 300px;
+    height: 300px;
+    position:absolute;
+    display: grid;
+    place-content: center;
+    box-shadow: 0 0 40px #000 inset;
+}
+
+p {
+    font-size: 2rem;
+    color: #000000;
+}
+
+header p {
+    color: #FF4D4D;
+}
+
+header {
+    opacity: 0.5;
+    background-color: #c6ffe6;
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    left:100px;
+    top: 100px;
+    display: grid;
+    place-content: center;
+    box-shadow: 0 0 40px #25b1bf inset;
+}
+
+/* inside */
+.one {
+    transform: translateZ(50px);
+}
+
+.two {
+    transform: rotateY(180deg) translateZ(50px)
+}
+
+.three {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.four {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.five {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.six {
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+/* outside */
+.front {
+    transform: translateZ(150px);
+}
+
+.back {
+    transform:  rotateY(180deg) translateZ(150px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(150px);
+}
+
+.rigth {
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(150px);
+}
+.bottom {
+    transform: rotateX(-90deg) translateZ(150px);
+}
+
+@keyframes rotate-box {
+    from {
+        transform: rotateY(0deg) rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg) rotateZ(45deg);
+    }
+}
+
+
+
+
+
+
+
