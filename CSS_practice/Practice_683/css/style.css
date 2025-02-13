@@ -1,0 +1,124 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: #32455f;
+    color: #bababa;
+    text-align: center;
+    margin-top: -2.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 0.1em;
+}
+
+div {
+    border: 1px solid rgb(196, 194, 194);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 0.4em;
+    box-shadow: 0 0 0.2em 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    inset: -1rem;
+    border-inline: 2px solid grey;
+    transform: scale(1,0);
+    transition: transform 250ms ease-in-out;
+}
+
+div::after {
+    content: "";
+    position: absolute;
+    inset: -1rem;
+    border-block: 2px solid grey;
+    transform: scale(0,1);
+    transition: transform 250ms ease-in-out;
+}
+
+div:hover::before {
+    transform: scale(1);
+}
+
+div:hover::after {
+    transform: scale(1);
+}
+
+span {
+    font-weight: bolder;
+    color: black;
+}
+
+p::first-letter {
+    text-transform: uppercase;
+
+}
+
+.price-span {
+    font-size: 2rem;
+    color: #3D5A80;
+}
+
+p {
+    color: rgb(109, 109, 110);
+    width: 20ch;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: #32455f;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: .5em 0.9em;
+    border-radius: 0.5em;
+    align-self: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
