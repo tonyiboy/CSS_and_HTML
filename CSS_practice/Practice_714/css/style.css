@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+   background-color: red; 
+}
+
+main {
+    display: grid;
+    grid-template-rows: 100px 150px 300px;
+    gap: 20px;
+    width: 80%;
+    background-color: #e0e0e0;
+}
+
+
+
