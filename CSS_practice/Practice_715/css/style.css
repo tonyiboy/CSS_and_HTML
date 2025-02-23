@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+   background-color: red; 
+}
+
+main {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 50px 50px;
+    grid-auto-columns: 100px 150px;
+    grid-auto-flow: column;
+    gap: 20px;
+    background-color: #e0e0e0;
+}
+
+
+
