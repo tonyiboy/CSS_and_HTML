@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+section {
+    width: 100vh;
+    height: 100vh;
+    background-image: url(../img/forest.jpg);
+    background-size: cover;
+
+    background-color: #a364ff;
+    background-blend-mode: darken;
+}
+
+
+
