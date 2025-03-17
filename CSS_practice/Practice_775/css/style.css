@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(/img/night.jpg);
+    background-size: cover;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: aliceblue;
+}
+
+a {
+    color: yellow;
+    position: relative;
+}
+
+a::after {
+    background-color: aqua;
+    border-radius: 5px;
+    content: attr(href);
+    display: block;
+    transform: scale(0);
+    position: absolute;
+    left: -70px;
+    bottom: 0;
+    padding: 5px 2px;
+    transition: transform ease-in 150ms,
+    bottom ease-in-out 150ms;
+}
+
+a:hover::after {
+    transform: scale(1);
+    bottom: 100%;
+}
+
+
+
+
