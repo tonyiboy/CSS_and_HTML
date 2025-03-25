@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: lightblue;
+    perspective: 1000px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+main {
+    width: 500px;
+    height: 500px;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+main:hover .front {
+    transform: rotateY(90deg);
+    transition: transform 2s;
+}
+
+main:hover .back {
+    transform: rotateY(0deg);
+    transition: transform 2s 2s;
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.front {
+    transition: 2s 2s;
+}
+
+.back {
+    display: grid;
+    place-content: center;
+    transform: rotateY(90deg);  
+    backface-visibility: hidden;
+    background-color: aqua;
+    transition: 2s;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
