@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: #0F1C2E;
+    perspective: 1000px;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    opacity: 0.7;
+    color: #833500;
+}
+
+main {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+main:hover .front-card {
+    transform: rotateY(90deg);
+    transition:all 1s ease-out ;
+    backface-visibility: hidden;
+}
+
+main:hover .back-card {
+    transform: rotateY(0deg);
+    transition:all 1s ease-in 1S;
+}
+
+section {
+    display: grid;
+    place-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    position: absolute;
+}
+
+.front-card {
+    backface-visibility: hidden;
+    transition: all 1s linear 1s;
+}
+
+.back-card {
+    transform: rotateY(-90deg);
+    background-color: #ffd299;
+    transition: all linear 1s;  
+}
