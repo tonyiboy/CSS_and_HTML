@@ -1,0 +1,61 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 350px;
+    height: 235px;
+    background-color: #374357;
+    position: relative;
+    transition: outline 250ms;
+}
+
+section:hover {
+    outline: 2px solid #374357;
+    outline-offset: 3px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    text-transform: uppercase;
+    position: absolute;
+    color: antiquewhite;
+}
+
+.first {
+    left: 30%;
+    top: 30%;
+}
+
+.second {
+    left: 30%;
+    top: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
