@@ -1,0 +1,102 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 350px;
+    height: 235px;
+    background-color: #374357;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+p {
+    transform: scale(0);
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    transition: 250ms;
+}
+
+.first {
+    top: 30%;
+    left: 30%;
+}
+
+.second {
+    top: 60%;
+    left: 30%;
+}
+
+section:hover p{
+    transform: scale(1);
+}
+
+section:hover img {
+    opacity: 0.6;
+}
+
+
+
+.card::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 1.6rem;
+    right: 1.6rem;
+    top: 1.6rem;
+    bottom: 1.6rem;
+    border-block: 2px solid black;
+    transform: scale(0,1);
+    transition: 350ms;
+}
+
+section:hover .card::before{
+    transform: scale(1,1);
+    
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 1.6rem;
+    right: 1.6rem;
+    top: 1.6rem;
+    bottom: 1.6rem;
+    border-inline: 1px solid black;
+    transform: scale(1,0);
+    transition: 350ms;
+}
+
+section:hover .card::after{
+    transform: scale(1,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
