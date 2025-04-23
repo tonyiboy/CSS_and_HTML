@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b6ccd8;
+
+}
+
+section {
+    background-color: #313d44;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 5px;
+    text-transform: uppercase;
+}
+
+button:active {
+    background-color: #71c4ef;
+    color: #fffefb;
+    transition-property: all;
+    transition-duration: 20ms;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
