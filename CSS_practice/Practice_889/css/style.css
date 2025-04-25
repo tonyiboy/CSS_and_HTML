@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid red;
+    background-image: url("../img/photo.jpg");
+    height: 33.3vh;
+
+}
+
+/* responsive */
+.containerOne {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* not responsive */
+.containerTwo {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containerThree {
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+}
+
+/* original size not responsive */
+.containerFour {
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 80vh;
+}
